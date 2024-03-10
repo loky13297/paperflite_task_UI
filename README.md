@@ -7,6 +7,7 @@ This project is a React application that utilizes custom CSS for styling and doe
 1. Sorting: Users can sort conversations by Created date, last activity, or time spent.
 2. Search filter: Users can filter conversations based on the conversation name.
 3. Dynamic content: Clicking on a conversation card dynamically updates the data in the right column.
+4. Active and Inactive tab in right column list render.
 
 Note: You can check all the above functionalities i have done working logics.
 
