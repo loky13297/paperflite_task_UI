@@ -59,6 +59,7 @@ const ConversionComponent = () => {
   useEffect(() => {
     let sortedData = handleSort();
     setConversations(sortedData);
+    // eslint-disable-next-line
   }, [sortValue]);
 
   
