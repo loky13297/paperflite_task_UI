@@ -8,6 +8,8 @@ This project is a React application that utilizes custom CSS for styling and doe
 2. Search filter: Users can filter conversations based on the conversation name.
 3. Dynamic content: Clicking on a conversation card dynamically updates the data in the right column.
 
+Note: You can check all the above functionalities i have done working logics.
+
 Global state management is handled using Redux Toolkit.
 
 ## Installation
