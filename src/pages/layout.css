@@ -1,0 +1,96 @@
+.page_layout {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+.page_layout .side_bar {
+    width: 5%;
+}
+
+.page_layout .content_box {
+    width: 25%;
+    border-right: 1px solid #B9B9B9;
+    border-left: 1px solid #B9B9B9;
+}
+
+.page_layout .list_box {
+    width: 70%;
+}
+
+/* some common styles */
+
+.text-light-gray {
+    color: #717274;
+}
+
+.fs-12 {
+    font-size: 13px;
+}
+
+.mx-1 {
+    margin: 0px 10px;
+}
+/* end of common style*/
+
+.icon-border {
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_section_tab {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+    border-top: 1px solid #DBDBDB;
+    background: white;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+    .page_layout .side_bar {
+        display: none;
+     }
+    .mobile_section_tab {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 9999;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .page_layout .content_box {
+        display: none;
+    }
+
+    .page_layout .list_box {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+}
+
+@media only screen  and (max-width: 1580px) and (min-width: 1000px) {
+    
+    .page_layout .content_box {
+        width: 35%;
+        border-right: 1px solid #B9B9B9;
+        border-left: 1px solid #B9B9B9;
+    }
+    
+    .page_layout .list_box {
+        width: 60%;
+    } 
+}

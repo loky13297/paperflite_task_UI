@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "sam-sans";
+    src: url("./assets/fonts/samsungsharpsans.otf");
+}
+
+body {
+    font-family: "sam-sans";
+    
+}
+
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content:space-between;
+}
+
+@keyframes colorChangeAnimation {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: #E51058;
+    }
+
+    100% {
+        color: #E51058;
+    }
+}

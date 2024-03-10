@@ -1,0 +1,83 @@
+.section_head {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_info {
+    padding: 30px;
+}
+
+.section_header {
+    font-size: 40px;
+    font-weight: 900;
+    padding: 40px 0px 0px 0px;
+    margin: 0;
+}
+
+.sub_text {
+    font-size: 12;
+    margin: 0px;
+}
+
+.conversationLists {
+    height:600px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A9A9A9; 
+    border-radius: 10px;
+  }
+  
+
+.sort_tab {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.inactive_sort {
+    cursor: pointer;
+}
+.active_sort{
+    color: #E51058;
+    animation: colorChangeAnimation 1s;
+    cursor: pointer;
+}
+
+.search_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    height: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+.input_box {
+    outline: none;
+    border: none;
+    padding: 0px;
+    width: 95%;
+    font-size: 15px;
+}
+.input_box::placeholder{
+    font-style: italic;
+    font-size: 12px;
+    color: #A9A9A9;
+}

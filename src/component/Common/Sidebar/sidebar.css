@@ -1,0 +1,26 @@
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebox {
+    padding: 4rem 0px;
+}
+
+.sidebar .side_icons {
+    margin-bottom: 2.5em;
+}
+
+.profile_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 4em;
+    margin-top: 2rem;
+}

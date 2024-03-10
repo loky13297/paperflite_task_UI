@@ -1,0 +1,166 @@
+.page_header {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.header_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page_bg {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.img_main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_fade {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.page_sub_header {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.boxDetails_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.info_child {
+    width: calc(25% - 10px); 
+}
+
+.list_component_bg {
+    padding: 0px 40px;
+    margin-top: -20px;
+}
+
+.custom_tab {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 1rem;
+}
+
+.text-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-container::after {
+    content: '';
+    position: absolute;
+    top: 140%;
+    left: 35%;
+    width: 0%;
+    height: 3px;
+    background-color: #E51058;
+    transition: width 0.3s ease;
+}
+
+.text-container.active::after {
+    width: 15%;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.text-container.active {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #E51058;
+    animation: colorChangeAnimation 1s;
+}
+
+.text-container.inactive {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .header_box {
+        flex-wrap: wrap;
+    }
+    .boxDetails_info {
+        width: 100%;
+    }
+    
+    .info_child {
+        width: calc(50% - 10px); 
+    }
+    .page_header {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .list_component_bg {
+        padding: 0px 10px;
+    }
+
+
+    .text-container.active {
+        font-size: 14px;
+    }
+    
+    .text-container.inactive {
+        font-size: 14px;
+    }
+}
+
+@media only screen  and (max-width: 1580px) and (min-width: 768px) {
+    .header_box {
+        flex-wrap: wrap;
+    }
+    .boxDetails_info {
+        width: 100%;
+    }
+    
+    .info_child {
+        width: calc(25% - 10px); 
+    }
+    .page_header {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .list_component_bg {
+        padding: 0px 10px;
+    }
+
+
+    .text-container.active {
+        font-size: 14px;
+    }
+    
+    .text-container.inactive {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,64 @@
+.display_people_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.people_img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.border-vr {
+    /* margin: auto; */
+    height: 20px;
+    width: 1.5px;
+    background: #E2E2E2;
+    /* margin: 0px 30px; */
+}
+
+.icons_box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.person_details {
+    display: flex;
+    align-items: center;
+}
+
+.display_name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.display_visit {
+    font-size: 13px;
+}
+
+@media only screen and  (max-width: 600px) {
+    .display_visit {
+        display: none;
+    }
+    .display_name {
+        font-size: 12px;
+    }
+    .border-vr {
+        display: none;
+    }
+    .icons_box{
+        gap:10px
+    }
+    .icons_box :nth-child(5){
+        display: none;
+    }
+    .icons_box :nth-child(6){
+        display: none;
+    }
+}
